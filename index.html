@@ -5,6 +5,61 @@
 	<meta name="description" content="froodley.com - websites and things">
 
 	<title>frood!</title>
+
+	<style>
+		.video-grid {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			justify-content: center;
+			margin: 20px 0;
+		}
+
+		.video-item {
+			flex: 0 0 320px;
+			max-width: 320px;
+			text-align: center;
+		}
+
+		.video-item video {
+			width: 100%;
+			height: 240px;
+			object-fit: cover;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.video-caption {
+			margin-top: 15px;
+			font-size: 14px;
+			line-height: 1.4;
+			color: #333;
+		}
+
+		/* Responsive design */
+		@media (max-width: 768px) {
+			.video-grid {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.video-item {
+				flex: none;
+				width: 100%;
+				max-width: 100%;
+			}
+
+			.video-item video {
+				height: 200px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.video-item video {
+				height: 180px;
+			}
+		}
+	</style>
 </head>
 
 
@@ -56,174 +111,107 @@
 		Um, uh, here's a few videos I like from the YouTube...<br /><br />
 
 
-		<Table border=0 width="100%" cellspacing="50">
-			<tr>
-				<td valign="top">
+		<div class="video-grid">
+			<div class="video-item">
+				<video controls preload="metadata" controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/etta-james-at-last.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Etta James, "At Last"</div>
+			</div>
+
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/flaming-lips-tale-of-the-horny-frog.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Flaming Lips, "Tale of Horny Frog"</div>
+			</div>
+
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/harry-nilsson-coconut.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Harry Nilsson, "Coconut"</div>
+			</div>
+
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="./blues_brothers.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Comin' to ya on a dusty road!</div>
+			</div>
+
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/beck-loser.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Beck, "Loser"<br />Soy un contentador! I'm a loser baby, so why don't ya kill me?</div>
+			</div>
+
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/parappa-driving-test.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">You gotta BELIEVE!</div>
+			</div>
+
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/chumlee-best-moments.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">One of my clowning-around role models, Chumlee</div>
+			</div>
+
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/talking-heads-once-in-a-lifetime.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">The Talking Heads, "Once in a Lifetime"</div>
+			</div>
 
 
-					<br />
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/paul-simon-peace-like-a-river.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Paul Simon, "Peace, Like a River"</div>
+			</div>
 
 
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/etta-james-at-last.mp4" type="video/mp4">
-					</video><br /><br />
-					Etta James, "At Last"<br /><Br />
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/muppets-mahna-mahna.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Mahna Mahna!</div>
+			</div>
 
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/flaming-lips-tale-of-the-horny-frog.mp4"
-							type="video/mp4">
-					</video><br /><br />
-					Flaming Lips, "Tale of Horny Frog"<br /><Br />
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/marcy-playground-pigeon-farm.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Marcy Playground, <u>Pigeon Farm</u></div>
+			</div>
 
-					<!--iframe width="420" height="315" src="http://www.youtube.com/embed/yMjUR1ga5yM" frameborder="0" allowfullscreen></iframe><br/><br/>
-<!-- Phish, "Heavy Things"-->
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/dave-mason-disagree.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Dave Mason, <u>We Just Disagree</u></div>
+			</div>
 
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/harry-nilsson-coconut.mp4"
-							type="video/mp4">
-					</video><br /><br />
-					Harry Nilson, "Coconut"
-
-					<br /><Br />
-
-
-					<video width="320" height="315" controls>
-						<source src="./blues_brothers.mp4" type="video/mp4">
-					</video><br /><br />
-					Comin' to ya on a dusty road!
-					<br /><Br />
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/beck-loser.mp4" type="video/mp4">
-					</video><br /><br />
-					Beck, "Loser"
-					<br />Soy un contentador! I'm a loser baby, so why don't ya kill me?
-
-					<br /><Br />
-
-					<!--
-<iframe width="420" height="315" src="//www.youtube.com/embed/4BzqbQoroi0" frameborder="0" allowfullscreen></iframe><br/>
-King Hippo from Mike Tyson's Punch Out:<br/><br/>
--->
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/parappa-driving-test.mp4" type="video/mp4">
-					</video><br /><br />
-					<!--Parappa the Rapper, "Driving Teacher" -->
-					<br />You gotta BELIEVE!
-					<br><br />
-
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/paul-simon-peace-like-a-river.mp4"
-							type="video/mp4">
-					</video><br /><br />
-					Paul Simon, "Peace, Like a River"<br /><br />
-
-				</td>
-				<td width="50%" valign=top>
-
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/talking-heads-once-in-a-lifetime.mp4"
-							type="video/mp4">
-					</video><br /><br />
-					The Talking Heads, "Once in a Lifetime"</span>
-
-
-					<br />
-					<!--
-<iframe width="420" height="315" src="http://www.youtube.com/embed/0eu50BBFG3k" frameborder="0" allowfullscreen></iframe>
-<br/>
-<span style="font-size: x-small">Great hook, but otherwise<br/> I have no idea what he's talking about.  Ha!</span>
-<span style="font-size: x-small"> Flaming Lips, <u>Turn it On</u></span>
-<br/><Br/>
--->
-					<!--
-<iframe width="420" height="315" src="http://www.youtube.com/embed/mVsyJtCsqeA" frameborder="0" allowfullscreen></iframe><br/>
-Flaming Lips, "Trapdoor"<br/>
-"/above our heads it swung... heard louder than a gun: the sound it made was love... love...//<br/>
-<br/>-->
-
-
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/chumlee-best-moments.mp4	"
-							type="video/mp4">
-					</video><br /><br />
-					<!-- One of my clowning-around role models, Chumlee -->
-					<!-- Pawn Stars, "Chumlee's Best Moments" -->
-
-					<br /><br />
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/muppets-mahna-mahna.mp4" type="video/mp4">
-					</video><br /><br />
-					Mahna Mahna!
-
-
-
-					<br /><br />
-
-
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/marcy-playground-pigeon-farm.mp4"
-							type="video/mp4">
-					</video><br /><br />
-					<br />
-					Marcy Playground, <u>Pigeon Farm</u>
-					<br /><br />
-
-
-					<br /><br />
-
-
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/dave-mason-disagree.mp4" type="video/mp4">
-					</video><br /><br />
-					<br />
-					Dave Mason, <u>We Just Disagree</u>
-					<br /><br />
-
-
-					<br />
-
-
-				<video width="320" height="315" controls>
+			<div class="video-item">
+				<video controls preload="metadata">
 					<source src="./artie.mp4" type="video/mp4">
-				</video><br /><br />
-				<br />
-				ARTIE!  The strongest MAN!  /in the world/</u>
-				<br /><br />
+				</video>
+				<div class="video-caption">ARTIE! The strongest MAN! /in the world/</div>
+			</div>
 
-
-				<br /><br />
-
-					<video width="320" height="315" controls>
-						<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/fraggle-rock-trash-heap.mp4"
-							type="video/mp4">
-					</video><br /><br />
-					<br />
-					Fraggle Rock, <u>Trash Heap</u>
-					<br /><br />
-
-					<!--
-<iframe width="420" height="315" src="http://www.youtube.com/embed/xDmyfH72QCc" frameborder="0" allowfullscreen></iframe><br/><br/>
-<span style="">
-The Chumlee people make a cameo in the Three Amigos</span>
-<br/><br/>
-
-iframe width="420" height="315" src="http://www.youtube.com/embed/UgujmHcSv0s" frameborder="0" allowfullscreen></iframe-->
-
-
-					<!-- Soulive's rendition of Eleanor Rigby by the Beatles
-http://www.youtube.com/watch?v=7KngpmH7-ls -->
-
-				</td>
-			</tr>
-		</table>
+			<div class="video-item">
+				<video controls preload="metadata">
+					<source src="https://pub-0e0add38994d4a7fa982ecceb8d7e1fe.r2.dev/fraggle-rock-trash-heap.mp4" type="video/mp4">
+				</video>
+				<div class="video-caption">Fraggle Rock, <u>Trash Heap</u></div>
+			</div>
+		</div>
 
 
 
