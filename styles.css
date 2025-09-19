@@ -54,6 +54,7 @@ table {
 		flex-wrap: wrap;
 		gap: 30px;
 		justify-content: center;
+		align-items: flex-start;
 		max-width: 1200px;
 		margin: 20px auto;
 	}
