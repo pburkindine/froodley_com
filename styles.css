@@ -1,0 +1,59 @@
+/* Mobile-first video grid styles */
+
+.video-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.video-item {
+	flex: none;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+
+.video-item video {
+	width: 100%;
+	max-width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-caption {
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333;
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+	.video-item video {
+		height: 180px;
+	}
+}
+
+/* Tablet and desktop - switch to multi-column layout */
+@media (min-width: 769px) {
+	.video-grid {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: center;
+	}
+
+	.video-item {
+		flex: 0 0 320px;
+		max-width: 320px;
+	}
+
+	.video-item video {
+		width: 100%;
+		height: 240px;
+	}
+}
