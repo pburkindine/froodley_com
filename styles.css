@@ -1,5 +1,11 @@
 /* Mobile-first video grid styles */
 
+/* Center the upper content container */
+table {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
 /* Base mobile styles */
 .video-grid {
 	display: flex;
