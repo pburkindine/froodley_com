@@ -1,5 +1,6 @@
 /* Mobile-first video grid styles */
 
+/* Base mobile styles */
 .video-grid {
 	display: flex;
 	flex-direction: column;
@@ -9,15 +10,15 @@
 }
 
 .video-item {
-	flex: none;
-	width: 100%;
-	max-width: 100%;
+	flex: none !important;
+	width: 100% !important;
+	max-width: 100% !important;
 	text-align: center;
 }
 
 .video-item video {
-	width: 100%;
-	max-width: 100%;
+	width: 100% !important;
+	max-width: 100% !important;
 	height: 200px;
 	object-fit: cover;
 	border-radius: 8px;
@@ -38,22 +39,24 @@
 	}
 }
 
-/* Tablet and desktop - switch to multi-column layout */
-@media (min-width: 769px) {
+/* Desktop and tablet - switch to multi-column layout */
+@media (min-width: 1024px) {
 	.video-grid {
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 30px;
-		justify-content: center;
+		flex-direction: row !important;
+		flex-wrap: wrap !important;
+		gap: 30px !important;
+		justify-content: center !important;
 	}
 
 	.video-item {
-		flex: 0 0 320px;
-		max-width: 320px;
+		flex: 0 0 320px !important;
+		max-width: 320px !important;
+		width: auto !important;
 	}
 
 	.video-item video {
-		width: 100%;
-		height: 240px;
+		width: 100% !important;
+		height: 240px !important;
+		max-width: 320px !important;
 	}
 }
