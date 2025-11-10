@@ -28,12 +28,12 @@
 		}
 
 		.gallery-container {
-			margin: 5% 10% 10% 10%;
+			margin: 5% 2% 10% 2%;
 			text-align: center;
 		}
 
 		.main-image {
-			max-width: 80%;
+			max-width: 98%;
 			max-height: 60vh;
 			border: 2px solid #333;
 			margin: 20px 0;
@@ -53,13 +53,16 @@
 		}
 
 		.control-btn {
-			font-size: 24px;
-			padding: 10px 20px;
+			font-size: 48px;
+			padding: 20px 40px;
 			margin: 0 10px;
 			background: #f0f0f0;
 			border: 2px solid #333;
 			cursor: pointer;
 			font-family: Comic Sans MS, sans-serif;
+			min-width: 80px;
+			min-height: 80px;
+			touch-action: manipulation;
 		}
 
 		.control-btn:hover {
@@ -76,25 +79,63 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			margin: 20px 0;
-			gap: 5px;
+			gap: 15px;
 		}
 
 		.thumbnail {
-			width: 80px;
-			height: 80px;
+			width: 180px;
+			height: 180px;
 			object-fit: cover;
-			border: 2px solid #ccc;
+			border: 3px solid #ccc;
 			cursor: pointer;
-			transition: border-color 0.3s;
+			transition: all 0.3s;
+			touch-action: manipulation;
+			border-radius: 3px;
 		}
 
 		.thumbnail:hover {
 			border-color: #333;
+			transform: scale(1.05);
+			box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 		}
 
 		.thumbnail.active {
 			border-color: #000;
-			border-width: 3px;
+			border-width: 4px;
+			transform: scale(1.08);
+			box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+		}
+
+		/* Mobile optimizations */
+		@media (max-width: 768px) {
+			.control-btn {
+				font-size: 56px;
+				padding: 25px 45px;
+				margin: 0 15px;
+				min-width: 100px;
+				min-height: 100px;
+			}
+
+			.thumbnail {
+				width: 160px;
+				height: 160px;
+			}
+		}
+
+		/* Tablet/smaller desktop - 3-4 per row */
+		@media (min-width: 769px) and (max-width: 1200px) {
+			.thumbnail {
+				width: 200px;
+				height: 200px;
+			}
+		}
+
+		/* Large desktop - 5+ per row */
+		@media (min-width: 1201px) {
+			.thumbnail {
+				width: 220px;
+				height: 220px;
+			}
 		}
 
 		.image-info {
