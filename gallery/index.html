@@ -34,34 +34,34 @@
 
 		.main-image {
 			max-width: 98%;
-			max-height: 60vh;
+			max-height: 50vh;
 			border: 2px solid #333;
-			margin: 20px 0;
+			margin: 0;
 			cursor: pointer;
 		}
 
 		#main-image-container {
-			height: 60vh;
+			height: 50vh;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin: 20px 0;
+			margin: 0;
 		}
 
 		.controls {
-			margin: 20px 0;
+			margin: 0;
 		}
 
 		.control-btn {
-			font-size: 48px;
-			padding: 20px 40px;
-			margin: 0 10px;
+			font-size: 72px;
+			padding: 30px 60px;
+			margin: 0 15px;
 			background: #f0f0f0;
 			border: 2px solid #333;
 			cursor: pointer;
 			font-family: Comic Sans MS, sans-serif;
-			min-width: 80px;
-			min-height: 80px;
+			min-width: 120px;
+			min-height: 120px;
 			touch-action: manipulation;
 		}
 
@@ -109,11 +109,11 @@
 		/* Mobile optimizations */
 		@media (max-width: 768px) {
 			.control-btn {
-				font-size: 56px;
-				padding: 25px 45px;
-				margin: 0 15px;
-				min-width: 100px;
-				min-height: 100px;
+				font-size: 80px;
+				padding: 35px 65px;
+				margin: 0 20px;
+				min-width: 140px;
+				min-height: 140px;
 			}
 
 			.thumbnail {
@@ -139,22 +139,29 @@
 		}
 
 		.image-info {
-			margin: 10px 0;
+			margin: 0;
 			font-size: 14px;
-			color: #666;
+			color: #555;
 		}
 
 		hr {
 			width: 30%;
-			margin: 20px auto;
+			margin: 5px auto;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="gallery-container">
+		<div style="text-align: left; margin-bottom: 60px;">
+			<a href="../index.html" style="display: inline-flex; align-items: center; gap: 20px; text-decoration: none; font-size: 24px;">
+				<span>&lt; repeat2341.com</span>
+				<img src="../repeat2341.jpg" alt="repeat2341" style="height: 120px; width: auto;" />
+			</a>
+		</div>
+
 		<hr />
-		<h2>my drawin'</h2>
+		<h2 style="font-size: 48px;">my drawin'</h2>
 		<hr />
 
 		<div id="main-image-container">
